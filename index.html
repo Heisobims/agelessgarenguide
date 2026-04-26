@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Garden Bundle — Four eBooks for $33 (Save $65)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-deep:   #1a3d0f;
+    --green-rich:   #2d6a1f;
+    --green-mid:    #4a9e2f;
+    --green-soft:   #7cc654;
+    --green-pale:   #d4edda;
+    --green-whisper:#f0f8ec;
+    --earth-dark:   #3b2a1a;
+    --earth-mid:    #6b4c2a;
+    --earth-warm:   #c8956c;
+    --coral:        #993c1d;
+    --coral-soft:   #d85a30;
+    --teal:         #085041;
+    --cream:        #faf7f2;
+    --cream-dark:   #f0ebe2;
+    --ink:          #1c1a17;
+    --ink-soft:     #3d3830;
+    --muted:        #7a7268;
+    --gold:         #c9a227;
+    --gold-pale:    #f5e9c0;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Lora', Georgia, serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.4;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: var(--green-deep);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px 100px;
+    overflow: hidden;
+  }
+
+  .hero-rings { position: absolute; inset: 0; pointer-events: none; }
+  .hero-rings::before, .hero-rings::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(122,198,84,0.12);
+  }
+  .hero-rings::before { width: 900px; height: 900px; top: 50%; left: 50%; transform: translate(-50%,-60%); }
+  .hero-rings::after  { width: 1300px; height: 1300px; top: 50%; left: 50%; transform: translate(-50%,-58%); }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(201,162,39,0.15);
+    border: 1px solid rgba(201,162,39,0.35);
+    color: var(--gold);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border-radius: 100px;
+    margin-bottom: 36px;
+    animation: fadeUp 0.8s ease both;
+  }
+  .hero-badge::before { content:''; width:6px; height:6px; background:var(--gold); border-radius:50%; }
+
+  .hero-save {
+    display: inline-block;
+    background: var(--coral);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 22px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+    letter-spacing: 0.04em;
+    animation: fadeUp 0.8s 0.05s ease both;
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 7vw, 84px);
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    max-width: 860px;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+  .hero-title em { font-style: italic; color: var(--green-soft); }
+
+  .hero-sub {
+    font-family: 'Lora', serif;
+    font-size: clamp(17px, 2.2vw, 21px);
+    color: rgba(255,255,255,0.65);
+    text-align: center;
+    max-width: 580px;
+    margin-top: 22px;
+    font-style: italic;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+
+  .hero-divider { width: 60px; height: 2px; background: var(--green-soft); margin: 36px auto; animation: fadeUp 0.8s 0.3s ease both; }
+
+  .hero-promise {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(14px,1.6vw,16px);
+    color: rgba(255,255,255,0.55);
+    text-align: center;
+    letter-spacing: 0.02em;
+    animation: fadeUp 0.8s 0.35s ease both;
+  }
+
+  .hero-cta-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 48px;
+    animation: fadeUp 0.8s 0.45s ease both;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--green-mid);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-primary:hover { background: var(--green-soft); transform: translateY(-2px); }
+  .btn-primary .arrow { font-size: 18px; transition: transform 0.2s; }
+  .btn-primary:hover .arrow { transform: translateX(4px); }
+
+  .price-note { font-family: 'DM Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,0.38); }
+
+  /* ── Book spine row ── */
+  .book-spines {
+    display: flex;
+    gap: 12px;
+    margin-top: 60px;
+    animation: fadeUp 0.9s 0.55s ease both;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  img .banner{
+    width: 50px;
+    height: 100px;
+  }
+  .spine {
+    width: 58px;
+    height: 220px;
+    border-radius: 4px 8px 8px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: -4px 4px 0 rgba(0,0,0,0.3), -8px 8px 16px rgba(0,0,0,0.4);
+    padding: 16px 10px;
+  }
+  .spine::before { content:''; position:absolute; left:0; top:0; bottom:0; width:10px; border-radius:4px 0 0 4px; background:rgba(0,0,0,0.25); }
+  .spine-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    line-height: 1.3;
+    text-align: center;
+    padding-left: 10px;
+  }
+  .spine-num {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.1em;
+    margin-top: 8px;
+    padding-left: 10px;
+  }
+  .spine-1 { background: var(--green-rich); }
+  .spine-2 { background: var(--coral); }
+  .spine-3 { background: #2d6a1f; }
+  .spine-4 { background: var(--teal); }
+
+  /* ── SECTION BASE ── */
+  .section { padding: 96px 24px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .container-wide { max-width: 1080px; margin: 0 auto; }
+
+  .eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--green-rich);
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 4.5vw, 48px);
+    font-weight: 700;
+    line-height: 1.18;
+    color: var(--ink);
+    margin-bottom: 20px;
+  }
+  .section-title em { font-style: italic; color: var(--green-rich); }
+
+  .section-body { font-size: 17px; color: var(--ink-soft); max-width: 640px; line-height: 1.75; }
+
+  /* ── PROBLEM ── */
+  .problem-section { background: var(--cream-dark); border-top: 1px solid rgba(0,0,0,0.06); border-bottom: 1px solid rgba(0,0,0,0.06); }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2px;
+    margin-top: 52px;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .problem-item { background: var(--cream); padding: 32px 28px; position: relative; }
+  .problem-item::before {
+    content: attr(data-num);
+    position: absolute;
+    top: 20px; right: 24px;
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.04);
+    line-height: 1;
+  }
+  .problem-icon { width:36px; height:36px; background:var(--green-pale); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; margin-bottom:16px; }
+  .problem-item h3 { font-family:'Playfair Display',serif; font-size:18px; font-weight:600; color:var(--ink); margin-bottom:10px; line-height:1.3; }
+  .problem-item p  { font-family:'DM Sans',sans-serif; font-size:14px; color:var(--muted); line-height:1.65; }
+
+  /* ── PULL QUOTE ── */
+  .pull-quote { border-left:4px solid var(--green-mid); padding:24px 32px; margin:48px 0; background:var(--green-whisper); border-radius:0 8px 8px 0; }
+  .pull-quote p { font-family:'Playfair Display',serif; font-size:clamp(18px,2.4vw,23px); font-style:italic; color:var(--green-deep); line-height:1.55; }
+
+  /* ── BOOK SECTIONS ── */
+  .books-section { background: var(--green-deep); }
+  .books-section .eyebrow { color: var(--green-soft); }
+  .books-section .section-title { color: #fff; }
+
+  .book-cards-list { margin-top: 52px; display: flex; flex-direction: column; gap: 3px; }
+
+  .book-entry {
+    background: rgba(255,255,255,0.04);
+    border-radius: 8px;
+    padding: 32px 28px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    align-items: start;
+    transition: background 0.2s;
+  }
+  .book-entry:hover { background: rgba(255,255,255,0.08); }
+
+  .book-num-badge {
+    width: 42px; height: 42px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  .b1 { background: var(--green-rich); }
+  .b2 { background: var(--coral); }
+  .b3 { background: #2d6a1f; }
+  .b4 { background: var(--teal); }
+
+  .book-entry-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  .book-entry-sub {
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 14px;
+  }
+  .book-entry-solves {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .book-entry-solves strong { color: var(--green-soft); flex-shrink: 0; }
+
+  .book-entry-learns { display: flex; flex-direction: column; gap: 8px; }
+  .learn-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.55;
+  }
+  .learn-item::before { content: '✓'; color: var(--green-soft); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+  .book-entry-price {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: rgba(255,255,255,0.28);
+    margin-top: 18px;
+  }
+  .book-entry-price s { color: rgba(255,255,255,0.22); }
+
+  /* ── VALUE BOX ── */
+  .value-section { background: var(--cream-dark); }
+
+  .value-card {
+    background: var(--cream);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 16px;
+    padding: 52px 48px;
+    max-width: 640px;
+    margin: 48px auto 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .value-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--green-mid), var(--green-soft));
+  }
+
+  .value-breakdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+    margin-bottom: 24px;
+  }
+  .value-item {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .value-item .label { color: var(--ink-soft); font-weight: 500; }
+  .value-item s { color: #bbb; }
+
+  .value-divider { width: 100%; height: 1px; background: rgba(0,0,0,0.08); margin: 24px 0; }
+
+  .value-total-was {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .value-total-was s { color: #bbb; }
+
+  .value-price-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .value-big-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 96px;
+    font-weight: 800;
+    color: var(--coral);
+    line-height: 1;
+    margin: 8px 0;
+  }
+  .value-big-price sup { font-size: 40px; vertical-align: top; margin-top: 18px; display: inline-block; }
+
+  .value-sublabel {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+
+  .value-save {
+    display: inline-block;
+    background: var(--green-pale);
+    color: var(--green-rich);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 24px;
+    border-radius: 100px;
+    margin-bottom: 8px;
+  }
+
+  /* ── DEEP DIVE ── */
+  .deepdive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+  @media (max-width: 760px) { .deepdive-grid { grid-template-columns: 1fr; } }
+
+  .deepdive-card {
+    background: var(--cream);
+    border: 1px solid rgba(0,0,0,0.07);
+    border-radius: 12px;
+    padding: 28px 26px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .deepdive-card:hover { border-color: var(--green-mid); transform: translateY(-3px); }
+  .deepdive-card.coral:hover { border-color: var(--coral); }
+  .deepdive-card.teal:hover  { border-color: var(--teal); }
+
+  .deepdive-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--green-rich);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .deepdive-card.coral .deepdive-heading { color: var(--coral); }
+  .deepdive-card.teal  .deepdive-heading { color: var(--teal); }
+
+  .deepdive-num {
+    width: 28px; height: 28px;
+    border-radius: 6px;
+    background: var(--green-pale);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--green-rich);
+    flex-shrink: 0;
+  }
+  .deepdive-card.coral .deepdive-num { background: #fde8df; color: var(--coral); }
+  .deepdive-card.teal  .deepdive-num { background: #d4ede7; color: var(--teal); }
+
+  .deepdive-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .deepdive-list li {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.6;
+  }
+  .deepdive-list li::before { content: '—'; color: var(--green-mid); flex-shrink: 0; margin-top: 1px; }
+  .deepdive-card.coral .deepdive-list li::before { color: var(--coral-soft); }
+  .deepdive-card.teal  .deepdive-list li::before { color: var(--teal); }
+
+  /* ── FOR WHO ── */
+  .forwho-section { background: var(--cream-dark); }
+  .forwho-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 48px; }
+  @media (max-width: 640px) { .forwho-cols { grid-template-columns: 1fr; } }
+
+  .forwho-col h3 { font-family:'Playfair Display',serif; font-size:20px; font-weight:600; margin-bottom:20px; display:flex; align-items:center; gap:10px; }
+  .check-list, .x-list { list-style:none; display:flex; flex-direction:column; gap:12px; }
+  .check-list li, .x-list li { font-family:'DM Sans',sans-serif; font-size:15px; color:var(--ink-soft); display:flex; align-items:flex-start; gap:12px; line-height:1.5; }
+  .check-list li::before { content:'✓'; color:var(--green-mid); font-weight:700; flex-shrink:0; margin-top:1px; }
+  .x-list li::before    { content:'✗'; color:#c0392b; font-weight:700; flex-shrink:0; margin-top:1px; }
+
+  /* ── PRICING ── */
+  .pricing-section { background: var(--green-deep); text-align: center; }
+  .pricing-section .eyebrow { color: var(--green-soft); }
+  .pricing-section .section-title { color: #fff; }
+
+  .price-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 52px 48px;
+    max-width: 560px;
+    margin: 48px auto 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .price-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg, var(--green-mid), var(--green-soft)); }
+
+  .price-amount { font-family:'Playfair Display',serif; font-size:72px; font-weight:800; color:#fff; line-height:1; margin-bottom:6px; }
+  .price-amount sup { font-size:32px; vertical-align:top; margin-top:14px; display:inline-block; }
+  .price-old { font-family:'DM Sans',sans-serif; font-size:16px; color:rgba(255,255,255,0.3); text-decoration:line-through; margin-bottom:12px; }
+  .price-save { font-family:'DM Sans',sans-serif; font-size:15px; color:var(--green-soft); margin-bottom:28px; }
+
+  .price-includes { list-style:none; margin:24px 0 36px; display:flex; flex-direction:column; gap:10px; text-align:left; }
+  .price-includes li { font-family:'DM Sans',sans-serif; font-size:15px; color:rgba(255,255,255,0.7); display:flex; align-items:center; gap:12px; }
+  .price-includes li::before { content:'✓'; color:var(--green-soft); font-weight:700; flex-shrink:0; }
+
+  .btn-buy { display:inline-flex; align-items:center; gap:10px; width:100%; justify-content:center; background:var(--green-mid); color:#fff; font-family:'DM Sans',sans-serif; font-size:17px; font-weight:500; padding:20px 40px; border-radius:8px; text-decoration:none; transition:background 0.2s, transform 0.15s; letter-spacing:0.01em; }
+  .btn-buy:hover { background:var(--green-soft); transform:translateY(-2px); }
+
+  .guarantee { margin-top:20px; font-family:'DM Sans',sans-serif; font-size:13px; color:rgba(255,255,255,0.35); display:flex; align-items:center; justify-content:center; gap:8px; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+
+  .testimonial-card {
+    background: var(--cream);
+    border: 1px solid rgba(0,0,0,0.07);
+    border-radius: 12px;
+    padding: 28px 24px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .testimonial-card:hover {
+    border-color: var(--green-mid);
+    transform: translateY(-3px);
+  }
+
+  .stars { color: var(--gold); font-size: 14px; letter-spacing: 2px; margin-bottom: 14px; }
+
+  .testimonial-card blockquote {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    margin-bottom: 18px;
+  }
+
+  .testimonial-author {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+
+  .testimonial-book-tag {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 100px;
+    margin-bottom: 14px;
+  }
+  .tag-green  { background: var(--green-pale); color: var(--green-rich); }
+  .tag-coral  { background: #fde8df; color: var(--coral); }
+  .tag-teal   { background: #d4ede7; color: var(--teal); }
+
+  /* ── FAQ ── */
+  .faq-list { margin-top:48px; display:flex; flex-direction:column; gap:2px; }
+  .faq-item { border:1px solid rgba(0,0,0,0.08); border-radius:8px; overflow:hidden; }
+  .faq-q { width:100%; background:var(--cream); border:none; padding:22px 24px; text-align:left; font-family:'Playfair Display',serif; font-size:17px; font-weight:600; color:var(--ink); cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:16px; transition:background 0.15s; }
+  .faq-q:hover { background:var(--cream-dark); }
+  .faq-q .chevron { color:var(--green-mid); font-size:18px; transition:transform 0.25s; flex-shrink:0; }
+  .faq-q.open .chevron { transform:rotate(180deg); }
+  .faq-a { max-height:0; overflow:hidden; transition:max-height 0.3s ease; background:var(--cream-dark); }
+  .faq-a.open { max-height:300px; }
+  .faq-a-inner { padding:0 24px 22px; font-family:'DM Sans',sans-serif; font-size:15px; color:var(--muted); line-height:1.7; }
+
+  /* ── FOOTER CTA ── */
+  .footer-cta { background:var(--cream-dark); text-align:center; padding:96px 24px; border-top:1px solid rgba(0,0,0,0.06); }
+  .footer-cta .section-title { margin:0 auto 20px; max-width:600px; }
+  .footer-cta .section-body { margin:0 auto 40px; text-align:center; }
+
+  footer { background:var(--green-deep); padding:32px 24px; text-align:center; }
+  footer p { font-family:'DM Sans',sans-serif; font-size:13px; color:rgba(255,255,255,0.3); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:none; } }
+  .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.65s ease, transform 0.65s ease; }
+  .reveal.visible { opacity:1; transform:none; }
+
+  /* ── STICKY BAR ── */
+  .sticky-bar { position:fixed; bottom:24px; left:50%; transform:translateX(-50%); background:var(--green-deep); border:1px solid rgba(255,255,255,0.12); border-radius:100px; padding:12px 10px 12px 20px; display:flex; align-items:center; gap:16px; box-shadow:0 8px 32px rgba(0,0,0,0.3); z-index:999; transition:opacity 0.3s; white-space:nowrap; }
+  .sticky-bar p { font-family:'DM Sans',sans-serif; font-size:14px; color:rgba(255,255,255,0.7); }
+  .sticky-bar .btn-primary { padding:10px 22px; font-size:14px; }
+
+  .ornament { display:flex; align-items:center; gap:16px; margin:48px 0; color:var(--green-mid); font-size:12px; letter-spacing:0.2em; }
+  .ornament::before, .ornament::after { content:''; flex:1; height:1px; background:rgba(0,0,0,0.1); }
+
+  @media (max-width:640px) {
+    .price-card { padding:36px 24px; }
+    .price-amount { font-size:56px; }
+    .value-big-price { font-size:72px; }
+    .value-card { padding:36px 22px; }
+    .book-entry { grid-template-columns: 1fr; }
+    .book-num-badge { width:36px; height:36px; font-size:15px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-rings"></div>
+
+  <span class="hero-badge">The Complete Garden Bundle — All Four eBooks</span>
+  <div class="hero-save">Save $65 &mdash; Over 66% Off</div>
+
+  <h1 class="hero-title">
+    One bundle.<br>
+    <em>Every problem solved.</em><br>
+    $33 instead of $98.
+  </h1>
+
+  <p class="hero-sub">Fix your soil, stop pests and disease, beat weeds for good, and grow more from whatever space you have — four complete systems in one purchase.</p>
+
+  <div class="hero-divider"></div>
+
+  <p class="hero-promise">Four eBooks &nbsp;·&nbsp; 300+ pages of practical guidance &nbsp;·&nbsp; 12 bonus resources &nbsp;·&nbsp; Instant PDF download</p>
+
+  <div class="hero-cta-group">
+    <a href="https://agelessgarden.gumroad.com/l/glbidt?wanted=true" class="btn-primary">
+      Get all four eBooks <span class="arrow">→</span>
+    </a>
+    <span class="price-note">One payment · No subscription · Yours to keep</span>
+  </div>
+
+  <!-- Four book spines -->
+  <div class="book-spines">
+    <!-- <div class="spine spine-1">
+      <div class="spine-text">The No-Fail Soil Fix</div>
+      <div class="spine-num">01</div>
+    </div>
+    <div class="spine spine-2">
+      <div class="spine-text">Pest &amp; Disease SOS</div>
+      <div class="spine-num">02</div>
+    </div>
+    <div class="spine spine-3">
+      <div class="spine-text">Weed-Free in 30 Days</div>
+      <div class="spine-num">03</div>
+    </div>
+    <div class="spine spine-4">
+      <div class="spine-text">Grow More in Less Space</div>
+      <div class="spine-num">04</div>
+    </div> -->
+    <img src="/image/agelessguidebanner01.png" class="banner">
+  </div>
+</section>
+
+<!-- ── PROBLEM ── -->
+<section class="section problem-section">
+  <div class="container">
+    <p class="eyebrow reveal">Why most gardens underperform</p>
+    <h2 class="section-title reveal">The same four problems.<br><em>Affecting almost every garden.</em></h2>
+    <p class="section-body reveal">You water. You feed. You follow the advice. And still — plants that won't thrive, weeds that won't quit, something eating your crops, and never quite enough space to grow everything you want. These four books address each problem directly, with systems rather than tips.</p>
+
+    <div class="problem-grid">
+      <div class="problem-item reveal" data-num="1">
+        <div class="problem-icon">🌱</div>
+        <h3>Soil that won't perform</h3>
+        <p>Yellowing leaves, poor yields, plants that stall after germinating. Almost always a soil problem — and almost always fixable once you know what you're looking at.</p>
+      </div>
+      <div class="problem-item reveal" data-num="2">
+        <div class="problem-icon">🐛</div>
+        <h3>Pests and disease with no clear cause</h3>
+        <p>Holes in leaves, mysterious wilting, fungal spread. Most gardeners can't identify what they're seeing — which means they can't respond correctly.</p>
+      </div>
+      <div class="problem-item reveal" data-num="3">
+        <div class="problem-icon">🌿</div>
+        <h3>Weeds that keep winning</h3>
+        <p>You clear them, they come back. You dig, they multiply. Weeding feels endless because the approach most gardeners use makes the underlying problem worse, not better.</p>
+      </div>
+      <div class="problem-item reveal" data-num="4">
+        <div class="problem-icon">📐</div>
+        <h3>Not enough space to grow what you want</h3>
+        <p>A balcony, a patio, a small bed. Most small-space gardeners are using less than half their productive growing surface — without realising it.</p>
+      </div>
+    </div>
+
+    <div class="pull-quote reveal">
+      <p>"Most gardening books tell you what to grow. These four books tell you how to fix the problems that stop everything from growing. That's a different kind of book — and a much more useful one."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── THE FOUR BOOKS ── -->
+<section class="section books-section">
+  <div class="container">
+    <p class="eyebrow reveal">What's in the bundle</p>
+    <h2 class="section-title reveal">Four books. <em>Four complete systems.</em></h2>
+    <p class="section-body reveal" style="color:rgba(255,255,255,0.55);">Each book tackles one core gardening problem from the ground up — with specific techniques, reference tables, and practical tools you'll use every season.</p>
+
+    <div class="book-cards-list">
+
+      <!-- Book 1 -->
+      <div class="book-entry reveal">
+        <div class="book-num-badge b1">1</div>
+        <div>
+          <div class="book-entry-title">The No-Fail Soil Fix</div>
+          <div class="book-entry-sub">Build Garden Soil That Grows Anything</div>
+          <div class="book-entry-solves"><strong>Fixes:</strong> Plants not growing, poor yields, yellowing leaves — all traced back to bad soil.</div>
+          <div class="book-entry-learns">
+            <div class="learn-item">Identify your soil type in five minutes with a hands-on test — no equipment needed</div>
+            <div class="learn-item">Fix waterlogged clay, drought-prone sand, compacted ground, and depleted container compost</div>
+            <div class="learn-item">Build the correct raised bed mix using the 60-30-10 recipe that outperforms bagged compost</div>
+            <div class="learn-item">Test and correct pH, and understand why it controls every nutrient your plants can access</div>
+            <div class="learn-item">Follow a year-round feeding calendar so every season keeps your beds improving</div>
+          </div>
+          <div class="book-entry-price">Sold individually at <s>$21</s></div>
+        </div>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="book-entry reveal">
+        <div class="book-num-badge b2">2</div>
+        <div>
+          <div class="book-entry-title">Pest &amp; Disease SOS</div>
+          <div class="book-entry-sub">The Organic Gardener's Field Guide</div>
+          <div class="book-entry-solves"><strong>Fixes:</strong> Holes in leaves, pest infestations, fungal disease, and dying plants with no obvious cause.</div>
+          <div class="book-entry-learns">
+            <div class="learn-item">Identify 12 common pests and 10 common diseases from symptoms alone</div>
+            <div class="learn-item">Make seven organic sprays from kitchen ingredients — garlic, chilli, soap, neem, baking soda, milk, seaweed</div>
+            <div class="learn-item">Attract the beneficial insects that handle most pest control for free</div>
+            <div class="learn-item">Use a four-bed crop rotation that breaks the cycle of soil-borne disease</div>
+            <div class="learn-item">Follow a 12-month prevention calendar so you're acting before problems appear, not after</div>
+          </div>
+          <div class="book-entry-price">Sold individually at <s>$23</s></div>
+        </div>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="book-entry reveal">
+        <div class="book-num-badge b3">3</div>
+        <div>
+          <div class="book-entry-title">Weed-Free in 30 Days</div>
+          <div class="book-entry-sub">The Lazy Gardener's Weed Control System</div>
+          <div class="book-entry-solves"><strong>Fixes:</strong> Weeds that keep coming back, stealing nutrients and light, and making gardening feel like a losing battle.</div>
+          <div class="book-entry-learns">
+            <div class="learn-item">Clear a weed-infested bed in 30 days without digging — using the no-dig cardboard-and-compost method</div>
+            <div class="learn-item">Identify and remove 20 common weeds using the right technique for each (the wrong approach on bindweed makes it worse)</div>
+            <div class="learn-item">Choose the right mulch at the right depth to stop new weeds germinating before they start</div>
+            <div class="learn-item">Know when landscape fabric genuinely helps — and when it creates a bigger problem than the weeds</div>
+            <div class="learn-item">Build a short weekly routine that keeps beds clean all season with minimal effort</div>
+          </div>
+          <div class="book-entry-price">Sold individually at <s>$25</s></div>
+        </div>
+      </div>
+
+      <!-- Book 4 -->
+      <div class="book-entry reveal">
+        <div class="book-num-badge b4">4</div>
+        <div>
+          <div class="book-entry-title">Grow More in Less Space</div>
+          <div class="book-entry-sub">The Small Garden &amp; Container Growing Blueprint</div>
+          <div class="book-entry-solves"><strong>Fixes:</strong> Limited outdoor space — balconies, patios, courtyards — and getting genuinely productive harvests from them.</div>
+          <div class="book-entry-learns">
+            <div class="learn-item">Calculate your full productive growing surface, including vertical wall space most growers ignore entirely</div>
+            <div class="learn-item">Plan successions so one container produces three or four harvests per season instead of one</div>
+            <div class="learn-item">Set up a wall trellis that doubles the productive area of a small patio in an afternoon</div>
+            <div class="learn-item">Match the right container size, compost, and watering system to every crop from herbs to fruit trees</div>
+            <div class="learn-item">Choose from 30 varieties bred for containers — the yield difference over standard varieties can be 3:1</div>
+          </div>
+          <div class="book-entry-price">Sold individually at <s>$29</s></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── VALUE SUMMARY ── -->
+<section class="section value-section">
+  <div class="container">
+    <p class="eyebrow reveal" style="text-align:center;">The bundle price</p>
+    <h2 class="section-title reveal" style="text-align:center;">All four books.<br><em>Two-thirds off.</em></h2>
+
+    <div class="value-card reveal">
+      <div class="value-breakdown">
+        <span class="value-item"><span class="label">The No-Fail Soil Fix</span> <s>$21</s></span>
+        <span class="value-item"><span class="label">Pest &amp; Disease SOS</span> <s>$23</s></span>
+        <span class="value-item"><span class="label">Weed-Free in 30 Days</span> <s>$25</s></span>
+        <span class="value-item"><span class="label">Grow More in Less Space</span> <s>$29</s></span>
+      </div>
+      <div class="value-divider"></div>
+      <div class="value-total-was">Total if bought separately: <s>$98</s></div>
+      <div class="value-price-label">Your price for all four today:</div>
+      <div class="value-big-price"><sup>$</sup>33</div>
+      <div class="value-sublabel">for all four eBooks</div>
+      <div class="value-save">You save $65 — over 66% off</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DEEP DIVE ── -->
+<section class="section">
+  <div class="container-wide">
+    <div class="container" style="padding:0;">
+      <p class="eyebrow reveal">What's actually inside</p>
+      <h2 class="section-title reveal">Specific. Practical.<br><em>Built to be used, not just read.</em></h2>
+      <p class="section-body reveal">These are full reference guides, not thin overviews. Here is some of what's waiting inside each book:</p>
+    </div>
+
+    <div class="deepdive-grid">
+      <div class="deepdive-card reveal">
+        <div class="deepdive-heading">
+          <span class="deepdive-num">1</span>
+          The No-Fail Soil Fix
+        </div>
+        <ul class="deepdive-list">
+          <li>A complete A–Z amendments guide: bone meal, comfrey, coffee grounds, seaweed, wood ash, and twenty more — with exact application amounts and timing</li>
+          <li>The 60-30-10 raised bed recipe: the precise ratio of topsoil, compost, and drainage material that produces reliably fertile beds from year one</li>
+          <li>Specific fixes for waterlogged clay, drought-prone sand, compacted subsoil, and depleted container compost — four different problems, four different solutions</li>
+          <li>A full year-round feeding calendar broken down season by season, so you know what your soil needs at every point of the year</li>
+        </ul>
+      </div>
+
+      <div class="deepdive-card coral reveal">
+        <div class="deepdive-heading">
+          <span class="deepdive-num">2</span>
+          Pest &amp; Disease SOS
+        </div>
+        <ul class="deepdive-list">
+          <li>Twelve pest profiles — aphids, slugs, vine weevil, cabbage white, cutworms and more — with visual identification, damage patterns, and the correct organic response</li>
+          <li>Ten disease profiles covering powdery mildew, late blight, botrytis, clubroot — how to identify from symptoms and stop them spreading</li>
+          <li>Seven organic spray recipes with precise dilution ratios and the right situation to use each one</li>
+          <li>A companion planting guide that separates evidence-backed combinations from popular myths, so you stop wasting space on things that don't work</li>
+        </ul>
+      </div>
+
+      <div class="deepdive-card reveal">
+        <div class="deepdive-heading">
+          <span class="deepdive-num">3</span>
+          Weed-Free in 30 Days
+        </div>
+        <ul class="deepdive-list">
+          <li>The 30-day no-dig reclaim programme: a week-by-week action plan for clearing the worst weed-infested bed without turning a single spadeful of soil</li>
+          <li>Profiles of 20 common weeds — dandelion, bindweed, ground elder, couch grass, dock and more — with the specific correct removal method for each one</li>
+          <li>An 8-mulch comparison covering wood chip, bark, compost, straw, gravel, cardboard, landscape fabric, and living mulch — with correct depths and best uses</li>
+          <li>Three natural herbicide recipes for paths and hard surfaces, with honest guidance on what each can and genuinely cannot do</li>
+        </ul>
+      </div>
+
+      <div class="deepdive-card teal reveal">
+        <div class="deepdive-heading">
+          <span class="deepdive-num">4</span>
+          Grow More in Less Space
+        </div>
+        <ul class="deepdive-list">
+          <li>A container sizing guide for 16 crops from herbs to dwarf apple trees — minimum volume, ideal volume, and wet weight when full</li>
+          <li>Step-by-step build guides for four vertical growing structures: wall trellis, tension wire system, cane teepee, and balcony railing trellis</li>
+          <li>A 12-month succession calendar for 15 container crops showing when to sow, transplant, and harvest each one throughout the year</li>
+          <li>A 30-variety reference covering tomatoes, beans, courgettes, salad, herbs, and fruit — with container sizes and key yield advantages for every variety</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOR WHO ── -->
+<section class="section forwho-section">
+  <div class="container">
+    <p class="eyebrow reveal">Is this for me?</p>
+    <h2 class="section-title reveal">This bundle is <em>right for you</em> if&hellip;</h2>
+
+    <div class="forwho-cols">
+      <div>
+        <h3 style="color:var(--green-rich);">✓ &nbsp;This is for you</h3>
+        <ul class="check-list reveal">
+          <li>You grow vegetables, fruit, herbs, or flowers at home — in a garden, on a patio, or in containers</li>
+          <li>You've had repeated problems you can't fully explain or fix</li>
+          <li>You want to understand your garden rather than just follow instructions</li>
+          <li>You prefer organic, low-intervention methods that don't rely on chemical pesticides or herbicides</li>
+          <li>You've spent money on fertilisers, sprays, or soil products that didn't seem to make a difference</li>
+          <li>You want a complete reference library, not a pile of random tips</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="color:#c0392b;">✗ &nbsp;This is not for you</h3>
+        <ul class="x-list reveal">
+          <li>You're looking for a magic spray or single product that fixes everything</li>
+          <li>You want advice on specific ornamental plant varieties with no interest in food growing</li>
+          <li>You're a commercial grower or professional agronomist looking for technical academic depth</li>
+          <li>You want someone else to come and do the gardening for you</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRICING ── -->
+<section class="section pricing-section" id="pricing">
+  <div class="container">
+    <p class="eyebrow reveal">Get the bundle</p>
+    <h2 class="section-title reveal">Everything your garden<br><em>has been waiting for.</em></h2>
+
+    <div class="price-card reveal">
+      <div class="price-amount"><sup>$</sup>33</div>
+      <p class="price-old">Total if bought separately: $98</p>
+      <p class="price-save">You save $65 — over 66% off</p>
+
+      <ul class="price-includes">
+        <li>The No-Fail Soil Fix — complete eBook (PDF) <span style="opacity:0.45; margin-left:4px;">normally $21</span></li>
+        <li>Pest &amp; Disease SOS — complete eBook (PDF) <span style="opacity:0.45; margin-left:4px;">normally $23</span></li>
+        <li>Weed-Free in 30 Days — complete eBook (PDF) <span style="opacity:0.45; margin-left:4px;">normally $25</span></li>
+        <li>Grow More in Less Space — complete eBook (PDF) <span style="opacity:0.45; margin-left:4px;">normally $29</span></li>
+        <li>12 printable bonus resources across all four books</li>
+        <li>Reference tables, diagnosis guides, and seasonal calendars</li>
+        <li>Instant download — read on any device</li>
+      </ul>
+
+      <a href="https://agelessgarden.gumroad.com/l/glbidt?wanted=true" class="btn-buy">
+        Get all four eBooks for $33 →
+      </a>
+
+      <p class="guarantee">🔒 &nbsp;Secure checkout &nbsp;·&nbsp; Instant PDF delivery</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow reveal">From fellow gardeners</p>
+    <h2 class="section-title reveal">Real results, <em>real gardens.</em></h2>
+    <p class="section-body reveal">These are the kinds of problems these books were written to solve — and the results growers like you are getting from them.</p>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-book-tag tag-green">The No-Fail Soil Fix</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>"I've been gardening for over a decade and nobody ever explained pH to me clearly. The liming table in Chapter 3 solved a brassica problem I'd had for three years. Three years. One table."</blockquote>
+        <p class="testimonial-author">Margaret T. — kitchen gardener, Yorkshire</p>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-book-tag tag-coral">Pest &amp; Disease SOS</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>"The symptom-to-pest table is the thing I didn't know I needed. I'd been treating for slugs for two seasons when it turned out I had vine weevil. Different problem, completely different fix."</blockquote>
+        <p class="testimonial-author">David K. — allotment holder, Bristol</p>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-book-tag tag-green">Weed-Free in 30 Days</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>"I tried the 30-day no-dig method on the worst bed on my plot — the one that had been abandoned for two seasons. It genuinely worked. The weeds didn't come back the way they usually do."</blockquote>
+        <p class="testimonial-author">Fiona M. — allotment grower, Edinburgh</p>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-book-tag tag-teal">Grow More in Less Space</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>"I have a north-facing courtyard and had basically given up on growing food. The microclimate section showed me I'd been ignoring the one east-facing wall that actually gets good morning sun. My peas this year were fantastic."</blockquote>
+        <p class="testimonial-author">James R. — container grower, Manchester</p>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-book-tag tag-green">The No-Fail Soil Fix</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>"I followed the 60-30-10 raised bed recipe this spring and the difference in my tomatoes compared to last year was remarkable. Same variety, same position, completely different result."</blockquote>
+        <p class="testimonial-author">Priya S. — home grower, London</p>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-book-tag tag-teal">Grow More in Less Space</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>"The succession planting calendar changed how I think about my containers entirely. I used to get one crop per pot per season. This year I got three from most of them. Same pots, same patio."</blockquote>
+        <p class="testimonial-author">Sandra L. — balcony grower, Dublin</p>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-book-tag tag-coral">Pest &amp; Disease SOS</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>"The garlic spray recipe from Chapter 4 kept aphids off my broad beans this year for the first time ever. I've tried everything commercial. This cost me almost nothing and it actually worked."</blockquote>
+        <p class="testimonial-author">Tom H. — raised bed grower, Cardiff</p>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-book-tag tag-green">Weed-Free in 30 Days</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>"I had no idea that hoeing in wet conditions could make things worse. Or that bindweed actually spreads if you dig it. The section on perennial weeds alone was worth more than the price of all four books."</blockquote>
+        <p class="testimonial-author">Caroline B. — home gardener, Somerset</p>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-book-tag tag-green">The No-Fail Soil Fix</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>"The amendments A–Z guide is something I refer back to constantly. I've stopped buying things because the packaging looks right and started buying things because I've diagnosed a specific deficiency. Total shift in how I garden."</blockquote>
+        <p class="testimonial-author">Rachel O. — kitchen gardener, Norwich</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow reveal">Questions</p>
+    <h2 class="section-title reveal">Frequently asked</h2>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What format are the eBooks in?
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">All four eBooks are delivered as PDF files, readable on any device — phone, tablet, laptop, or desktop. You can also print them. After purchase you'll receive an immediate download link for all four files.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          I'm a complete beginner — will I understand these?
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Yes. None of these books assume prior gardening knowledge. Every technical term is explained when it first appears, and each book starts with the fundamentals before building up. If you've never grown anything before, you'll be able to follow everything from the first page of each book.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          I've bought gardening books before and they didn't help. Why would these be different?
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Most gardening books tell you what to do without explaining why. When something doesn't work in your specific situation, you're stuck. These books explain the mechanism behind each technique — why digging makes some weeds worse, why container size affects tomato yield more than feeding does, why the same mulch creates more weeds in one situation and prevents them in another. That understanding is what turns reading into real results in your specific garden.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do these books apply to my climate or region?
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Yes. Soil science, pest biology, weed management, and container growing work on the same principles in every climate. Seasonal calendars use season names rather than specific months, so they adapt to the Northern and Southern Hemispheres. Some specific product names may vary by region but all have widely available equivalents wherever you are.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is $33 actually worth it for digital books?
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">These four books sell individually for $21, $23, $25, and $29 — a total of $98. At $33 for all four you're paying less than a third of that. But more practically: one properly built raised bed, one pest problem correctly identified before it spreads, one season without weeds overwhelming your plot — any single one of those outcomes pays $33 back many times over. These are reference books you'll open every growing season for years.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          I only have a balcony or a few containers — are these still useful?
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Yes. Grow More in Less Space is written specifically for container and small space growers — balconies, patios, courtyards. The soil and pest books apply equally to container growing. And Weed-Free in 30 Days includes guidance for hard surfaces (paths, paving joints) that's directly relevant to any outdoor space, however small.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER CTA ── -->
+<section class="footer-cta">
+  <div class="container">
+    <p class="eyebrow reveal" style="text-align:center;">Ready to start?</p>
+    <h2 class="section-title reveal" style="text-align:center;">The productive garden you've been<br><em>trying to grow is possible.</em></h2>
+    <p class="section-body reveal" style="text-align:center; margin:0 auto 40px;">Better soil. Fewer pests. No more weeds taking over. More food from whatever space you have. All four systems in one purchase, today.</p>
+    <div style="text-align:center;" class="reveal">
+      <a href="https://agelessgarden.gumroad.com/l/glbidt?wanted=true" class="btn-primary" style="display:inline-flex;">
+        Get all four eBooks — $33 <span class="arrow">→</span>
+      </a>
+    </div>
+    <div class="ornament reveal" style="max-width:300px; margin:48px auto 0;">✦</div>
+    <p style="text-align:center; font-family:'DM Sans',sans-serif; font-size:13px; color:var(--muted);" class="reveal">Four eBooks &nbsp;·&nbsp; 300+ pages &nbsp;·&nbsp; Instant PDF download &nbsp;·&nbsp; $33</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 The Complete Garden Bundle &nbsp;·&nbsp; All rights reserved</p>
+</footer>
+
+<!-- ── STICKY BAR ── -->
+<div class="sticky-bar" id="stickyBar" style="opacity:0; pointer-events:none;">
+  <p>The Complete Garden Bundle</p>
+  <a href="https://agelessgarden.gumroad.com/l/glbidt?wanted=true" class="btn-primary">Get all four — $33 →</a>
+</div>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 40);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  const hero = document.querySelector('.hero');
+  const sticky = document.getElementById('stickyBar');
+  const stickyObserver = new IntersectionObserver(entries => {
+    if (!entries[0].isIntersecting) {
+      sticky.style.opacity = '1';
+      sticky.style.pointerEvents = 'auto';
+    } else {
+      sticky.style.opacity = '0';
+      sticky.style.pointerEvents = 'none';
+    }
+  }, { threshold: 0.1 });
+  stickyObserver.observe(hero);
+
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.faq-q.open').forEach(b => {
+      b.classList.remove('open');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.classList.add('open');
+      answer.classList.add('open');
+    }
+  }
+</script>
+
+</body>
+</html>
